@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Food Finder")
-                .font(.title)
+                .font(.largeTitle)
                 .foregroundColor(.black)
             HStack {
                 Text("App for finding good restaurants nearby")
