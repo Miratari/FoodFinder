@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06040BCD29C7C5A00012FD8C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06040BCC29C7C5A00012FD8C /* Restaurant.swift */; };
+		06040BCF29C7CE920012FD8C /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06040BCE29C7CE920012FD8C /* RestaurantView.swift */; };
 		066C1CBE29BEBB9A005178BA /* FoodFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C1CBD29BEBB9A005178BA /* FoodFinderApp.swift */; };
 		066C1CC029BEBB9A005178BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C1CBF29BEBB9A005178BA /* ContentView.swift */; };
 		066C1CC229BEBB9B005178BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066C1CC129BEBB9B005178BA /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06040BCC29C7C5A00012FD8C /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		06040BCE29C7CE920012FD8C /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		066C1CBA29BEBB9A005178BA /* FoodFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		066C1CBD29BEBB9A005178BA /* FoodFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodFinderApp.swift; sourceTree = "<group>"; };
 		066C1CBF29BEBB9A005178BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				066C1CBF29BEBB9A005178BA /* ContentView.swift */,
-				06040BCC29C7C5A00012FD8C /* Restaurant.swift */,
+				06040BCE29C7CE920012FD8C /* RestaurantView.swift */,
 				066C1CC129BEBB9B005178BA /* Assets.xcassets */,
 			);
 			path = Views;
@@ -270,7 +270,7 @@
 			files = (
 				066C1CC029BEBB9A005178BA /* ContentView.swift in Sources */,
 				066C1CBE29BEBB9A005178BA /* FoodFinderApp.swift in Sources */,
-				06040BCD29C7C5A00012FD8C /* Restaurant.swift in Sources */,
+				06040BCF29C7CE920012FD8C /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

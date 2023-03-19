@@ -10,15 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Southside Station")
+            Text("Food Finder")
                 .font(.title)
                 .foregroundColor(.black)
             HStack {
-                Text("Thai Fusion")
+                Text("App for finding good restaurants nearby")
                     .font(.subheadline)
                     .foregroundColor(.black)
                 Spacer()
-                Text("Southside")
+                Text("Open Project")
                     .font(.subheadline)
                     .foregroundColor(.black)
             }
