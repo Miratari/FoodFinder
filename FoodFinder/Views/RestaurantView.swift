@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RestaurantView: View {
-    @State private var restaurant = Restaurant()
+    //@State private var restaurant = Restaurant()
     
     var body: some View {
         ScrollView {
@@ -19,20 +19,20 @@ struct RestaurantView: View {
                     .overlay {
                         LinearGradient(gradient: Gradient(colors: [Color.clear, Color.clear, Color.white]), startPoint: /*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
                     }
-                Text(restaurant.name)
+                Text("restaurant name")
                     .font(.largeTitle)
                     .fontWeight(.light)
                     .padding(.leading)
                 HStack() {
-                    Text(restaurant.rating)
+                    Text("rating")
                         .font(.subheadline)
                         .fontWeight(.thin)
                     Spacer()
-                    Text(restaurant.foodtype)
+                    Text("food type")
                         .font(.subheadline)
                         .fontWeight(.thin)
                     Spacer()
-                    Text(restaurant.price)
+                    Text("price")
                         .font(.subheadline)
                         .fontWeight(.thin)
                 }
