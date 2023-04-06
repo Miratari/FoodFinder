@@ -9,4 +9,11 @@ import Foundation
 
 class Restaurant {
     //instance variables go here
+    
+    ///Name
+    ///Cuisine
+    ///Rating
+    ///Price Range
+    ///Distance (if we have time)
+
 }
