@@ -9,14 +9,18 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+    @State private var region =
+    //37.87171° N, 122.25967° W - Berkeley
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 37.86171, longitude: -122.26567),
+            span: MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
         )
     
     var body: some View {
         Map(coordinateRegion: $region)
+            .ignoresSafeArea()
     }
+    
 }
 
 struct MapView_Previews: PreviewProvider {

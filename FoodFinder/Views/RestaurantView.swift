@@ -13,12 +13,6 @@ struct RestaurantView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Image("southside_station")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                    .overlay {
-                        LinearGradient(gradient: Gradient(colors: [Color.clear, Color.clear, Color.white]), startPoint: /*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-                    }
                 Text("restaurant name")
                     .font(.largeTitle)
                     .fontWeight(.light)

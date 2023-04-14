@@ -9,10 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         ZStack {
             MapView()
-            //.offset(y: -50)
             .ignoresSafeArea()
             ScrollView() {
                 VStack(alignment: .leading) {
@@ -28,15 +26,17 @@ struct ContentView: View {
                             .font(.subheadline)
                             .foregroundColor(.black)
                     }
+                    ForEach(emptyRestaurantList(n: 5)) {
+                        Text($0.name)
+                            .padding()
+                    }
                 }
-                .offset(y: 100)
+                .padding()
+                .ignoresSafeArea()
             }
             .ignoresSafeArea()
             .padding()
         }
-        
-        
-        
     }
 }
 
