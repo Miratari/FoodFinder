@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
+        VStack {
             MapView()
-            .ignoresSafeArea()
             ScrollView() {
                 VStack(alignment: .leading) {
                     Text("Title")
@@ -34,8 +33,6 @@ struct ContentView: View {
                 .padding()
                 .ignoresSafeArea()
             }
-            .ignoresSafeArea()
-            .padding()
         }
     }
 }
