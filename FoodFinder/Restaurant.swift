@@ -26,4 +26,6 @@ class Restaurant: Identifiable {
     ///Rating
     ///Price Range
     ///Distance (if we have time)
+    ///
+    ///hello
 }
