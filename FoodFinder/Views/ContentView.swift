@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selected_rataurant = emptyRestaurant()
+    @State private var selected_restaurant = emptyRestaurant()
     
     var body: some View {
         VStack {
@@ -16,6 +16,7 @@ struct ContentView: View {
             ScrollView() {
                 NavigationView {
                     VStack(alignment: .leading) {
+                        
                         Text("Food Finder")
                             .font(.largeTitle)
                             .multilineTextAlignment(.center)
@@ -27,12 +28,15 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .padding(.bottom)
                         }
-                        ForEach(emptyRestaurantList(n: 5)) {r in
+                        ForEach(emptyRestaurantList(n: 7)) {r in
                             NavigationLink(destination:RestaurantView()) {
                                 Text(r.name)
                                     .padding([.leading, .bottom, .trailing])
-                            }
+                            }.simultaneousGesture(TapGesture().onEnded(){
+                                selected_restaurant = r
+                            })
                         }
+                        Spacer()
                     } //Text($0.name)
                     .padding()
                 }
