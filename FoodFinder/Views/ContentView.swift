@@ -16,18 +16,21 @@ struct ContentView: View {
             ScrollView() {
                 NavigationView {
                     VStack(alignment: .leading) {
-                        Text("Title")
+                        Text("Food Finder")
                             .font(.largeTitle)
+                            .multilineTextAlignment(.center)
                         HStack {
                             Text("Subtitle")
                                 .font(.subheadline)
                             Spacer()
                             Text("Open Project")
                                 .font(.subheadline)
+                                .padding(.bottom)
                         }
                         ForEach(emptyRestaurantList(n: 5)) {r in
                             NavigationLink(destination:RestaurantView()) {
                                 Text(r.name)
+                                    .padding([.leading, .bottom, .trailing])
                             }
                         }
                     } //Text($0.name)
