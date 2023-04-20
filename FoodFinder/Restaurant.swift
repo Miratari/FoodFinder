@@ -19,6 +19,9 @@ class Restaurant: Identifiable {
     //class initializers
     init() {
         name = "Empty"
+        cuisine = "None"
+        rating = 0.0
+        price_range = "None"
     }
     
     init(name new_name: String, cuisine new_cuisine: String, rating new_rating: Double,

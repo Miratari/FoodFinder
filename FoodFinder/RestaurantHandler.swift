@@ -9,8 +9,8 @@ import Foundation
 
 func emptyRestaurantList(n: Int = 0) -> [Restaurant] {
     var restaurantList: [Restaurant] = []
-    for i in 0...n {
-        restaurantList.append(Restaurant(name: "Restaurant \(i)"))
+    for _ in 0...n {
+        restaurantList.append(Restaurant())
     }
     return restaurantList
 }
