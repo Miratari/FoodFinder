@@ -8,25 +8,34 @@
 import SwiftUI
 
 struct RestaurantView: View {
-    //@State private var restaurant = Restaurant()
     
+    var restaurant: Restaurant
+    
+    init() {
+        restaurant = Restaurant()
+    }
+    
+    init(restaurant new_restaurant: Restaurant) {
+        restaurant = new_restaurant
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("restaurant name")
+                Text(restaurant.name)
                     .font(.largeTitle)
                     .fontWeight(.light)
                     .padding(.leading)
                 HStack() {
-                    Text("rating")
+                    Text(restaurant.cuisine)
                         .font(.subheadline)
                         .fontWeight(.thin)
                     Spacer()
-                    Text("food type")
+                    Text(String(restaurant.rating))
                         .font(.subheadline)
                         .fontWeight(.thin)
                     Spacer()
-                    Text("price")
+                    Text(restaurant.price_range)
                         .font(.subheadline)
                         .fontWeight(.thin)
                 }

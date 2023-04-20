@@ -6,15 +6,16 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
-    @State private var selected_restaurant = emptyRestaurant()
+    @State public var selected_restaurant = emptyRestaurant()
+    @State public var map = MapView()
     
     var body: some View {
         VStack {
-            MapView()
             NavigationView {
-                ScrollView() {
+                ScrollView {
                     VStack(alignment: .leading) {
                         Text("Food Finder")
                             .font(.largeTitle)
@@ -29,15 +30,15 @@ struct ContentView: View {
                         }
                         
                         ForEach(emptyRestaurantList(n: 14)) {r in
-                            NavigationLink(destination:RestaurantView()) {
+                            NavigationLink(destination:RestaurantView(restaurant: r)) {
                                 Text(r.name)
                                     .padding([.leading, .bottom, .trailing])
                             }.simultaneousGesture(TapGesture().onEnded(){
                                 selected_restaurant = r
+                                
                             })
                         }
-                        Spacer()
-                    } //Text($0.name)
+                    }
                     .padding()
                 }
             }
