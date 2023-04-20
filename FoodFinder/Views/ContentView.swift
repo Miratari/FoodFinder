@@ -13,10 +13,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             MapView()
-            ScrollView() {
-                NavigationView {
+            NavigationView {
+                ScrollView() {
                     VStack(alignment: .leading) {
-                        
                         Text("Food Finder")
                             .font(.largeTitle)
                             .multilineTextAlignment(.center)
@@ -28,7 +27,8 @@ struct ContentView: View {
                                 .font(.subheadline)
                                 .padding(.bottom)
                         }
-                        ForEach(emptyRestaurantList(n: 7)) {r in
+                        
+                        ForEach(emptyRestaurantList(n: 14)) {r in
                             NavigationLink(destination:RestaurantView()) {
                                 Text(r.name)
                                     .padding([.leading, .bottom, .trailing])

@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    
     @State private var region =
     //37.87171° N, 122.25967° W - Berkeley
         MKCoordinateRegion(
@@ -19,6 +20,10 @@ struct MapView: View {
     var body: some View {
         Map(coordinateRegion: $region)
             .ignoresSafeArea()
+    }
+    
+    init() {
+        
     }
     
 }
